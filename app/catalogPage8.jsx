@@ -13,7 +13,7 @@ export default function Items8() {
           className="absolute -top-40 left-0 -z-10"
         ></Image>
         <div className="flex gap-10">
-          <div className="pt-">
+          <div className="pt-16">
             <Image src={gift} alt="gift"></Image>
             <h2 className="uppercase font-bold mb-5 text-nowrap">
               подарочная <sup className="ml-2 text-[#FF6600]">300</sup> <br />{" "}
@@ -22,7 +22,7 @@ export default function Items8() {
             </h2>
             <ul className="text-[#17171766] leading-8 w-52 relative">
               <li>Декор упаковки </li>
-              <li> Жестяная упаковка</li>
+              <li>Жестяная упаковка</li>
               <li>Пластиковая упаковка</li>
               <li>Подарочные коробки</li>
               <li>Подарочные пакеты</li>
@@ -38,7 +38,7 @@ export default function Items8() {
             className="pl-6 pr-2 -translate-y-16"
           ></Image>
         </div>
-        <div className="pl-5  text-nowrap ">
+        <div className="pl-5 translate-x-24 text-nowrap ">
           <ul className="flex flex-col items-end">
             <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
             <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
