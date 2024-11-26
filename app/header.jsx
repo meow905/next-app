@@ -31,21 +31,33 @@ export default function Header() {
           </ul>
         </nav>
         <p className="text-[#17171766] text-[16px] opacity-[80%] pt-[40px] lg:block hidden">
-          <span className="hover:bg-[#FF6600] hover:text-white px-4 py-2 rounded-full">
+          <Link
+            href="/main"
+            className="hover:bg-[#FF6600] hover:text-white px-4 py-2 rounded-full"
+          >
             Главная
-          </span>{" "}
-          /{" "}
-          <span className="hover:bg-[#FF6600] hover:text-white px-4 py-2 rounded-full">
-            <Link href={"/catalog"}>Каталог</Link>
-          </span>{" "}
-          /{" "}
-          <span className="hover:bg-[#FF6600] hover:text-white px-4 py-2 rounded-full">
+          </Link>
+
+          <Link
+            href={"/catalog"}
+            className="hover:bg-[#FF6600] hover:text-white px-4 py-2 rounded-full"
+          >
+            Каталог
+          </Link>
+
+          <Link
+            href={"/dopCatalog"}
+            className="hover:bg-[#FF6600] hover:text-white px-4 py-2 rounded-full"
+          >
             Под каталог
-          </span>{" "}
-          /{" "}
-          <span className="hover:bg-[#FF6600] hover:text-white px-4 py-2 rounded-full">
+          </Link>
+
+          <Link
+            href={"/ProductOfTheDay"}
+            className="hover:bg-[#FF6600] hover:text-white px-4 py-2 rounded-full"
+          >
             Товар дня
-          </span>
+          </Link>
         </p>
       </header>
     </>

@@ -1,21 +1,20 @@
 import Image from "next/image";
-import img1 from "./assets/img/Лого_оарнжевое 1.png";
-import img2 from "./assets/img/130 1.png";
-import img3 from "./assets/img/image 73.png";
-import img4 from "./assets/img/image 71.png";
-import img5 from "./assets/img/image 72.png";
-import img6 from "./assets/img/Rectangle 177.png";
-import img7 from "./assets/img/Group.png";
+import img1 from "../assets/img/Лого_оарнжевое 1.png";
+import img2 from "../assets/img/130 1.png";
+import img3 from "../assets/img/image 73.png";
+import img4 from "../assets/img/image 71.png";
+import img5 from "../assets/img/image 72.png";
+import img6 from "../assets/img/Rectangle 177.png";
 import Link from "next/link";
-import Header from "./header";
+import Header from "../header";
 
 export default function Home() {
   return (
     <>
-      <Header></Header>
+      <Header />
       <div className="overflow-hidden">
-        <main className="lg:pl-[161px] pl-10 flex flex-col-reverse lg:flex-row justify-between relative">
-          <article>
+        <main className="lg:pl-[161px] pl-0 flex flex-col-reverse lg:flex-row justify-between relative">
+          <article className="pl-10">
             <h1 className="lg:pt-24 pt-5 pr-10 text-2xl font-bold uppercase">
               Майки с нанесением <br />
               логотипа
@@ -48,28 +47,34 @@ export default function Home() {
               src={img1}
               priority
               alt="photo"
-              className="pr-14 lg:hidden block absolute top-36 left-0 w-64"
+              className="pr-14 pl-8 lg:hidden block absolute top-36 left-0 w-64"
             />
-            <p className="text-[#17171766] text-[16px] opacity-[80%] pt-[40px] lg:hidden flex self-start">
-              <span className="hover:bg-[#FF6600] hover:text-white px-2 rounded-full">
+            <p className="text-[#17171766] text-[16px] opacity-[80%] pt-[40px] lg:hidden flex self-start pl-8 flex-wrap">
+              <Link href="/main" className="hover:text-[#FF6600] px-2">
                 Главная
-              </span>{" "}
-              /{" "}
-              <span className="hover:bg-[#FF6600] hover:text-white px-2 rounded-full">
-                <Link href={"/catalog"}>Каталог</Link>
-              </span>{" "}
-              /{" "}
-              <span className="hover:bg-[#FF6600] hover:text-white px-2 rounded-full">
+              </Link>
+
+              <Link href={"/catalog"} className="hover:text-[#FF6600] px-2">
+                Каталог
+              </Link>
+
+              <Link
+                href={"/dopCatalog"}
+                className="hover:text-[#FF6600] px-2 text-nowrap"
+              >
                 Под каталог
-              </span>{" "}
-              /{" "}
-              <span className="hover:bg-[#FF6600] hover:text-white px-2 rounded-full">
+              </Link>
+
+              <Link
+                href={"/ProductOfTheDay"}
+                className="hover:text-[#FF6600] px-2 text-nowrap"
+              >
                 Товар дня
-              </span>
+              </Link>
             </p>
           </section>
         </main>
-        <footer className="pt-40 pb-2 lg:mb-10 mb-4 border-b-[1px] border-solid border-[#171717]">
+        <footer className="pt-20 pb-2 lg:mb-10 mb-4 border-b-[1px] border-solid border-[#171717]">
           <ul className="flex justify-center items-center gap-4 flex-wrap lg:gap-11 text-[#17171766] px-3">
             <li className="lg:hover:bg-[#FF6600] rounded-2xl lg:block hidden lg:hover:text-white hover:text-[#FF6600] py-2 lg:px-5 text-nowrap cursor-pointer">
               Смотреть все
