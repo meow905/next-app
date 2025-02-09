@@ -3,6 +3,7 @@ import Image from "next/image";
 import homePicture from "../app/assets/img/free-icon-home-1828864.png";
 import teaCup from "../app/assets/img/Rectangle 150.png";
 import treeChris from "../app/assets/img/free-icon-christmas-tree-3701408.png";
+import Swiper from "./swipe/swipe";
 
 export default function Items7() {
   return (
@@ -42,17 +43,7 @@ export default function Items7() {
             className="pl-6 pr-2 lg:block hidden"
           ></Image>
           <div className="lg:pl-5 pl-0   text-nowrap">
-            <ul className="lg:flex flex-col items-end hidden">
-              <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
-              <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
-              <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
-              <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
-              <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
-              <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
-              <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
-              <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
-              <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
-            </ul>
+            <Swiper />
             <div className="lg:pl-24 pl-10">
               <Image src={treeChris} alt="plug"></Image>
               <h2 className="uppercase font-bold mb-4">

@@ -3,28 +3,71 @@ import Image from "next/image";
 import hande1 from "@/app/assets/img/hande1.png";
 import hande2 from "@/app/assets/img/hande2.png";
 import hande3 from "@/app/assets/img/hande3.png";
+import Swiper from "@/components/swipe/swipe";
+import img3 from "../assets/img/image 73.png";
+import img4 from "../assets/img/image 71.png";
+import img5 from "../assets/img/image 72.png";
+import img6 from "../assets/img/Rectangle 177.png";
+import logoimg from "@/app/assets/img/Лого_оарнжевое 1.png";
+import Link from "next/link";
 
 export default function DopCatalog() {
   return (
     <>
-      <div>
+      <div className="overflow-hidden">
         <Header></Header>
-        <section className="flex gap-10">
-          <div className="self-center relative -right-2 text-nowrap">
-            <Image src={hande1} className="inline-block" />
-            <Image src={hande2} className="inline-block ml-5" />
+        <section className="flex gap-10 lg:flex-row flex-col">
+          <div className="flex lg:gap-10 gap-32 relative">
+            <Image
+              src={logoimg}
+              className="absolute top-0 left-6 lg:hidden block"
+              alt="logo"
+            ></Image>
+            <div className="lg:self-center self-end relative -right-2 text-nowrap lg:w-auto w-56">
+              <Image src={hande1} alt="hande1" className="inline-block" />
+              <Image
+                src={hande2}
+                alt="hande2"
+                className="inline-block ml-5 scale-125 lg:scale-100"
+              />
+            </div>
+            <div>
+              <Image src={hande3} alt="hande3" />
+            </div>
           </div>
-          <div>
-            <Image src={hande3} />
-          </div>
-          <article className="w-[700px] self-center">
+          <article className="lg:w-[700px] max-w-[700px] self-center lg:pr-4 lg:pl-0 p-5">
+            <p className="text-[#17171766] text-[16px] opacity-[80%] lg:hidden flex flex-wrap self-start pb-9 gap-4">
+              <Link href={"/home"} className="hover:text-[#FF6600]">
+                Главная
+              </Link>
+
+              <Link href={"/catalog"} className="hover:text-[#FF6600]">
+                Каталог
+              </Link>
+
+              <Link
+                href={"/dopCatalog"}
+                className="hover:text-[#FF6600] text-nowrap"
+              >
+                Под каталог
+              </Link>
+
+              <Link
+                href={"/ProductOfTheDay"}
+                className="hover:text-[#FF6600] text-nowrap"
+              >
+                Товар дня
+              </Link>
+            </p>
             <p className="text-[#FF6600]">В наличии</p>
-            <h2 className="text-3xl font-bold">Деревянная модель HAND</h2>
+            <h2 className="lg:text-3xl text-2xl font-bold">
+              Деревянная модель HAND
+            </h2>
             <h3 className="border-b-[1px] border-[#171717] border-solid pb-4">
               Артикул: RFG45366H
             </h3>
-            <p className="pt-4">Описание</p>
-            <p className="text-[17px] pb-4">
+            <p className="pt-4 text-[#171717] lg:text-xl text-lg">Описание</p>
+            <p className="text-[17px] pb-4 text-[#000000c5] lg:text-lg text-base">
               Подставка из натурального дерева имитирует форму человеческой
               руки.
             </p>
@@ -36,7 +79,7 @@ export default function DopCatalog() {
               массива березы. Medium – высота фигурки 25 см Логотип наносится
               методом выжигания.
             </p>
-            <ul className="flex justify-between pt-5 items-center">
+            <ul className="flex lg:justify-between justify-center lg:gap-0 gap-5 pt-5 items-center flex-wrap">
               <li className="text-3xl text-[#FF6600]">1 270 ₽</li>
               <li className="text-xl">- 10 +</li>
               <li>
@@ -47,6 +90,122 @@ export default function DopCatalog() {
             </ul>
           </article>
         </section>
+        <ul className="lg:flex justify-center hidden gap-2 pt-5 border-b-2 border-solid border-[#FF6600]">
+          <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
+          <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
+          <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
+          <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
+          <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
+        </ul>
+        <section className="w-max flex lg:pl-24 pl-5 pt-11 border-b-[1px] border-none border-[#171717] lg:border-solid pb-14 lg:flex-row flex-col">
+          <div className="lg:self-center self-start">
+            <h2 className="lg:text-3xl text-2xl uppercase font-bold pb-4">
+              Еще товары <br /> этой категории
+            </h2>
+            <span className="lg:flex justify-end hidden">
+              <svg
+                className="border-[1px] border-transparent rounded-full hover:border-[#FF6600]"
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+              >
+                <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
+              </svg>
+              <svg
+                className="border-[1px] border-transparent rounded-full hover:border-[#FF6600]"
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+              >
+                <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+              </svg>
+            </span>
+          </div>
+          <div className="bg-[#E4E3E8B2] ml-10 overflow-hidden shadow-2xl ">
+            <div className="lg:px-8 px-10 flex justify-center lg:justify-start lg:gap-24 gap-16 py-16 text-nowrap flex-wrap lg:flex-nowrap">
+              <div className="relative">
+                <Image src={img3} alt="photo3" />
+                <h2 className="font-medium text-[15px] py-6">
+                  Футболка «Новая классика. <br />
+                  Freestyle», белая (S)
+                </h2>
+                <div className="flex items-center gap-9 text-[14px]">
+                  <ul>
+                    <li className="text-[#FF6600]">В наличии</li>
+                    <li className="text-[16px]">970 ₽</li>
+                    <li className="pt-2">Минимальный заказ 10 шт</li>
+                  </ul>
+                  <span className="text-[18px]">- 10 +</span>
+                </div>
+                <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
+                  +
+                </span>
+              </div>
+              <div className="relative">
+                <Image src={img4} alt="photo4" />
+                <h2 className="font-medium text-[15px] py-6">
+                  Футболка «Новая классика. <br />
+                  Freestyle», белая (S)
+                </h2>
+                <div className="flex items-center gap-9 text-[14px]">
+                  <ul>
+                    <li className="text-[rgb(255,102,0)]">В наличии</li>
+                    <li className="text-[16px]">970 ₽</li>
+                    <li className="pt-2">Минимальный заказ 10 шт</li>
+                  </ul>
+                  <span className="text-[18px]">- 10 +</span>
+                </div>
+                <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
+                  +
+                </span>
+              </div>
+              <div className="relative">
+                <Image src={img5} alt="photo5" />
+                <h2 className="font-medium text-[15px] py-6">
+                  Футболка «Новая классика. <br />
+                  Freestyle», белая (S)
+                </h2>
+                <div className="flex items-center gap-9 text-[14px]">
+                  <ul>
+                    <li className="text-[#FF6600]">В наличии</li>
+                    <li className="text-[16px]">970 ₽</li>
+                    <li className="pt-2">Минимальный заказ 10 шт</li>
+                  </ul>
+                  <span className="text-[18px]">- 10 +</span>
+                </div>
+                <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
+                  +
+                </span>
+              </div>
+              <div className="relative">
+                <Image src={img6} alt="photo6" />
+                <h2 className="font-medium text-[15px] py-6">
+                  Футболка «Новая классика. <br />
+                  Freestyle», белая (S)
+                </h2>
+                <div className="flex items-center gap-9 text-[14px]">
+                  <ul>
+                    <li className="text-[#FF6600]">В наличии</li>
+                    <li className="text-[16px]">970 ₽</li>
+                    <li className="pt-2">Минимальный заказ 10 шт</li>
+                  </ul>
+                  <span className="text-[18px]">- 10 +</span>
+                </div>
+                <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
+                  +
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="px-10 pt-10 max-w-96">
+            <input type="range" className="w-full" />
+          </div>
+        </section>
+        <p className="py-5 text-center bg-[#FF6600] lg:bg-transparent rounded-t-full px-6 text-[#fff] lg:text-black">
+          © 2022 “Promo World”. Все права защищены. Политика конфиденциальности
+        </p>
       </div>
     </>
   );

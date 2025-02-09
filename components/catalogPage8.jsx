@@ -2,11 +2,12 @@ import circle from "../app/assets/img/Ellipse.png";
 import Image from "next/image";
 import gift from "../app/assets/img/free-icon-gift-2549608.png";
 import giftBox from "../app/assets/img/Rectangle 160.png";
+import Swiper from "./swipe/swipe";
 
 export default function Items8() {
   return (
     <div className="relative overflow-hidden">
-      <div className="lg:mb-52 mb-14 flex justify-between lg:px-[161px] px-0 ">
+      <div className="flex justify-between lg:px-[161px] px-0 ">
         <Image
           src={circle}
           alt="Circle"
@@ -32,13 +33,6 @@ export default function Items8() {
               </h2>
             </ul>
           </div>
-          <div className="relative lg:hidden block ">
-            <h3 className="text-[14px] text-center px-12 mt-36 ml-5 text-white">
-              © 2022 “Promo World”. Все права защищены. Политика
-              конфиденциальности
-            </h3>
-            <div className="bg-[#FF6600] w-[640px] h-[500px] absolute -bottom-[350px] -right-24 rounded-tl-full rounded-tr-full -z-10 "></div>
-          </div>
           <Image
             src={giftBox}
             alt="pictuteOfPencils"
@@ -46,19 +40,13 @@ export default function Items8() {
           ></Image>
         </div>
         <div className="pl-5 translate-x-24 text-nowrap ">
-          <ul className="lg:flex hidden flex-col items-end">
-            <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
-            <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
-            <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
-            <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
-            <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
-            <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
-            <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
-            <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
-            <li className="w-4 h-4 border-solid border-[#17171766] border-2 rounded-full mb-2 hover:bg-[#FF6600] cursor-pointer hover:border-none"></li>
-          </ul>
+          <Swiper />
         </div>
       </div>
+
+      <h3 className="text-[14px] text-center px-12  text-white bg-[#FF6600] lg:hidden block py-12 rounded-tl-full rounded-tr-full">
+        © 2022 “Promo World”. Все права защищены. Политика конфиденциальности
+      </h3>
     </div>
   );
 }

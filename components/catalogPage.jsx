@@ -19,7 +19,7 @@ export default function Items() {
 
         <div className="lg:px-[161px] px-0 flex justify-between pt-4 lg:flex-row flex-col">
           <p className="text-[#17171766] text-[16px] opacity-[80%] pt-[40px] lg:hidden flex flex-wrap self-start pl-8">
-            <Link href="/main" className="hover:text-[#FF6600] px-2">
+            <Link href={"/home"} className="hover:text-[#FF6600] px-2">
               Главная
             </Link>
 

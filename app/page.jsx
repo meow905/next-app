@@ -1,14 +1,21 @@
+"use client";
 import Image from "next/image";
-import img1 from "../assets/img/Лого_оарнжевое 1.png";
-import img2 from "../assets/img/130 1.png";
-import img3 from "../assets/img/image 73.png";
-import img4 from "../assets/img/image 71.png";
-import img5 from "../assets/img/image 72.png";
-import img6 from "../assets/img/Rectangle 177.png";
+import img1 from "./assets/img/Лого_оарнжевое 1.png";
+import img2 from "./assets/img/130 1.png";
+import img3 from "./assets/img/image 73.png";
+import img4 from "./assets/img/image 71.png";
+import img5 from "./assets/img/image 72.png";
+import img6 from "./assets/img/Rectangle 177.png";
 import Link from "next/link";
-import Header from "../header";
+import Header from "./header";
 
 export default function Home() {
+  const links = [
+    {
+      name: "",
+      url: "",
+    },
+  ];
   return (
     <>
       <Header />
@@ -50,7 +57,7 @@ export default function Home() {
               className="pr-14 pl-8 lg:hidden block absolute top-36 left-0 w-64"
             />
             <p className="text-[#17171766] text-[16px] opacity-[80%] pt-[40px] lg:hidden flex self-start pl-8 flex-wrap">
-              <Link href="/main" className="hover:text-[#FF6600] px-2">
+              <Link href="/" className="hover:text-[#FF6600] px-2">
                 Главная
               </Link>
 
@@ -96,32 +103,12 @@ export default function Home() {
               Поло
             </li>
           </ul>
-          {/* <span className="lg:flex hidden">
-            <svg
-              className="border-[1px] border-transparent rounded-full hover:border-[#FF6600]"
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-              viewBox="0 0 24 24"
-            >
-              <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
-            </svg>
-            <svg
-              className="border-[1px] border-transparent rounded-full hover:border-[#FF6600]"
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-              viewBox="0 0 24 24"
-            >
-              <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
-            </svg>
-          </span> */}
         </footer>
         <p className="lg:hover:bg-[#FF6600] rounded-2xl lg:hidden block text-center lg:hover:text-white hover:text-[#FF6600] pb-4 lg:px-5 text-nowrap cursor-pointer">
           Смотреть все
         </p>
       </div>
-      <section className="pb-20 overflow-x-hidden">
+      <section className="lg:pb-10 pb-0 overflow-x-hidden">
         <ul className="flex lg:justify-between lg:gap-0 gap-4 justify-center lg:px-40 border-b-[1px] border-[#FF6600] lg:mb-5 lg:py-6 p-2 lg:bg-[#fff] bg-[#D9D9D938]">
           <li className="flex items-end gap-1 lg:border-none border-r-2 border-solid border-black lg:pr-0 pr-5">
             Фильтры
@@ -166,8 +153,8 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
@@ -184,8 +171,8 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
@@ -202,8 +189,8 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
@@ -220,8 +207,8 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
@@ -240,8 +227,8 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className="cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
@@ -258,8 +245,8 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
@@ -276,8 +263,8 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
@@ -294,8 +281,8 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
@@ -314,8 +301,8 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className="cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
@@ -332,8 +319,8 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
@@ -350,8 +337,8 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
@@ -368,8 +355,8 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
@@ -388,8 +375,8 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
@@ -406,8 +393,8 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
@@ -424,8 +411,8 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
@@ -442,8 +429,8 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
@@ -462,8 +449,8 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className="cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
@@ -480,8 +467,8 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
@@ -498,8 +485,8 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
@@ -516,8 +503,8 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
@@ -536,8 +523,8 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className="cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
@@ -554,8 +541,8 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
@@ -572,8 +559,8 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
@@ -590,15 +577,15 @@ export default function Home() {
                 <li className="text-[16px]">970 ₽</li>
                 <li className="pt-2">Минимальный заказ 10 шт</li>
               </ul>
-              <span className="text-[18px]">- 10 +</span>
             </div>
+              <span className="text-[18px]">- 10 +</span>
             <span className=" cursor-pointer hover:scale-75 transition absolute bg-white -top-5 -right-5 text-4xl border-2 w-10 h-10 flex justify-center items-center text-[#171717] border-solid border-[#171717] rounded-full">
               +
             </span>
           </div>
         </div>
 
-        <footer className="flex flex-col items-center gap-5 mt-16 border-b-[1px] border-solid border-black pb-24">
+        <footer className="flex flex-col items-center gap-5 mt-16 border-b-[1px] border-solid lg:border-black border-transparent pb-24">
           <button className="border-[#FF6600] border-2 py-3 px-12 text-[#FF6600] hover:text-[#fff] hover:bg-[#FF6600]">
             Показать еще
           </button>
@@ -624,9 +611,12 @@ export default function Home() {
             </svg>
           </p>
         </footer>
-        <p className="text-center text-[14px] py-6">
+        <p className="text-center text-[14px] py-6 lg:block hidden">
           © 2022 “Promo World”. Все права защищены. Политика конфиденциальности
         </p>
+        <h3 className="text-[14px] text-center px-12  text-white bg-[#FF6600] lg:hidden block py-12 rounded-tl-full rounded-tr-full">
+          © 2022 “Promo World”. Все права защищены. Политика конфиденциальности
+        </h3>
       </section>
     </>
   );
