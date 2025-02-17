@@ -124,7 +124,7 @@ export default function DopCatalog() {
                 onSlideChange={() => console.log("slide change")}
                 keyboard={true}
               >
-                <SwiperSlide className="p-5">
+                <SwiperSlide className="p-5 flex flex-col">
                   <Image src={img4} alt="photo4" />
                   <h2 className="font-medium text-[15px] py-6">
                     Футболка «Новая классика. <br />
@@ -139,7 +139,7 @@ export default function DopCatalog() {
                     <span className="text-[18px]">- 10 +</span>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="p-5">
+                <SwiperSlide className="p-5 flex flex-col">
                   <Image src={img5} alt="photo5" />
                   <h2 className="font-medium text-[15px] py-6">
                     Футболка «Новая классика. <br />
@@ -154,7 +154,7 @@ export default function DopCatalog() {
                     <span className="text-[18px]">- 10 +</span>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="p-5">
+                <SwiperSlide className="p-5 flex flex-col">
                   <Image src={img6} alt="photo6" />
                   <h2 className="font-medium text-[15px] py-6">
                     Футболка «Новая классика. <br />
@@ -169,7 +169,7 @@ export default function DopCatalog() {
                     <span className="text-[18px]">- 10 +</span>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="p-5">
+                <SwiperSlide className="p-5 flex flex-col">
                   <Image src={img6} alt="photo6" />
                   <h2 className="font-medium text-[15px] py-6">
                     Футболка «Новая классика. <br />
@@ -184,7 +184,7 @@ export default function DopCatalog() {
                     <span className="text-[18px]">- 10 +</span>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="p-5">
+                <SwiperSlide className="p-5  flex flex-col">
                   <Image src={img3} alt="photo3" />
                   <h2 className="font-medium text-[15px] py-6">
                     Футболка «Новая классика. <br />
