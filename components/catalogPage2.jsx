@@ -18,7 +18,7 @@ export default function Items2() {
           <div className="lg:pt-16 pt-0 pl-10 lg:static relative lg:pb-0 pb-20">
             <Image src={usb} alt="usb"></Image>
             <h2 className="uppercase font-bold mb-5">
-              флешки <sup className="ml-2 text-[#FF6600]">300</sup>
+              Флешки <sup className="ml-2 text-[#FF6600]">300</sup>
             </h2>
             <ul className="text-[#17171766] leading-8 text-nowrap">
               <li>Металлические флешки</li>

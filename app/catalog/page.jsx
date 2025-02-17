@@ -13,36 +13,7 @@ export default function Catalog() {
     <>
       <Header></Header>
       <Items></Items>
-      <div className="lg:block hidden">
-        <Header></Header>
-      </div>
-      <Items2></Items2>
-      <div className="lg:block hidden">
-        <Header></Header>
-      </div>
-      <Items3></Items3>
-      <div className="lg:block hidden">
-        <Header></Header>
-      </div>
-      <Items4></Items4>
-
-      <div className="lg:block hidden">
-        <Header></Header>
-      </div>
-      <Items5></Items5>
-
-      <div className="lg:block hidden">
-        <Header></Header>
-      </div>
-      <Items6></Items6>
-      <div className="lg:block hidden">
-        <Header></Header>
-      </div>
-      <Items7></Items7>
-      <div className="lg:block hidden">
-        <Header></Header>
-      </div>
-      <Items8></Items8>
+     
     </>
   );
 }
